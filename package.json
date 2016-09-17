@@ -4,7 +4,8 @@
   "description": "job creation bidding app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "node_modules/.bin/webpack -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,21 @@
   "bugs": {
     "url": "https://github.com/ricenbeanv2/giggs/issues"
   },
-  "homepage": "https://github.com/ricenbeanv2/giggs#readme"
+  "homepage": "https://github.com/ricenbeanv2/giggs#readme",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "express": "^4.14.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1"
+  }
 }
