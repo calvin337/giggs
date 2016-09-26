@@ -18,9 +18,9 @@ const Categories = connection.define('Categories', {
 	},
 
 }, {
-	hooks: {
-		afterSync: () => propagateCategories(data),
-	},
+	// hooks: {
+	// 	afterSync: () => propagateCategories(data),
+	// },
 	freezeTableName: true,
 });
 
