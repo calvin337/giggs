@@ -52,7 +52,7 @@ export function getJobList() {
 
           dataArray = response.data;
           console.log('dataArray: ', dataArray)
-          dispatch({ type: GET_ALL_JOBS, payload: response.data});
+          dispatch({ type: GET_ALL_JOBS, payload: response.data });
                 })
       .catch(() => {
         throw new SubmissionError({ _error: 'something terrible happened' });
