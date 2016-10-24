@@ -240,7 +240,6 @@ export function cancelJob(jobID) {
 }
 
 export function getJobs() {
-  console.log('inside');
   return dispatch => {
     return axios.get('/db/jobs/getAll')
       .then(response => {

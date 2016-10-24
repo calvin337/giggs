@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
-import { bindActionCreators } from 'redux';
 import Cookies from 'js-cookie';
-import GetReviews from './reviews/getReviews';
-import { getJobDetail, onJobClick } from '../../actions/jobs';
 import { Grid, Row, Col } from 'react-bootstrap';
+import { getJobDetail, onJobClick } from '../../actions/jobs';
 
 class EachJob extends Component {
   constructor(props) {
     super(props);
-
     this.redirectToJobPage = this.redirectToJobPage.bind(this);
   }
 
@@ -31,7 +28,6 @@ class EachJob extends Component {
         <div className='eachJobDiv'>
           {
             this.props.jobs.jobList.map((eachJob, index) => {
-              console.log('eachJob date :', eachJob.deadline);
               return (
                 <Grid key={index} className='eachJob'>
                   <Row>
@@ -67,7 +63,7 @@ class EachJob extends Component {
                       <h4>More information</h4>
                       <button
                         className="btn btn-secondary"
-                        onClick={() => {this.redirectToJobPage(eachJob.id, eachJob.user_id)}}
+                        onClick={() => { this.redirectToJobPage(eachJob.id, eachJob.user_id); }}
                       >
                         Go to Job >>
                       </button>

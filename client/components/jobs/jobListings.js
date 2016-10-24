@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { DropdownButton, MenuItem } from 'react-bootstrap';
 
 import Select from 'react-select-plus';
-import { sortPriceChange, sortCategories, sortDate, filterCategory, filterCats, getJobs } from '../../actions/jobs';
+impolrt { sortPriceChange, sortCategories, sortDate, filterCategory, filterCats, getJobs } from '../../actions/jobs';
 import { getParents, getChildren } from '../../actions/categories';
 import EachJob from './eachJob';
 
